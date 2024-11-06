@@ -1,3 +1,4 @@
+//all gsap logic here
 gsap.registerPlugin(ScrollTrigger);
 console.log(ScrollTrigger)
 let animComp = false;
@@ -28,13 +29,49 @@ gsap.from(".benefit-cards", {
     opacity: 0,
     stagger: 0.1,
     scrollTrigger : {
-        trigger: ".benefit-cards"
+        trigger: ".benefit-cards",
+        start: "top 120%",
     }
 })
 gsap.from(".benefits>h1", {
     y: 50,
     opacity: 0,
     scrollTrigger : {
-        trigger: ".benefits>h1"
+        trigger: ".benefits",
     }
 })
+gsap.from(".jobs>h1", {
+    y: 50,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".jobs>h1",
+    }
+});
+
+gsap.from(".jobs>span", {
+    y:50,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".jobs>h1"
+    }
+})
+gsap.from(".jobs>.job-card-container", {
+    y:50,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".jobs>.job-card-container"
+    }
+})
+gsap.from(".contact", {
+    y:50,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".contact",
+        start: "top 120%",
+    }
+})
+const jobs = document.getElementsByClassName("jobs")[0];
+const ctaClick = () =>{
+    const jobsPosition = jobs.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({ top: jobsPosition, behavior: 'smooth' });
+}
