@@ -103,7 +103,7 @@ html, body {
     width: 100%;
     flex-wrap: wrap;
     gap: 100px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .benefit-cards> span {
@@ -116,13 +116,13 @@ html, body {
     border-image: linear-gradient(45deg, yellow, orange, red) 1;
 }
 .jobs {
-    
+    background-color: black;
 }
 @media only screen and (max-width: 900px) {
     .hero {
         display: block;
         padding: 10% 5% 0% 5%;
-        height: 200vh;
+        height: 150vh;
     }
     .hero-1 {
         width: 100%;
