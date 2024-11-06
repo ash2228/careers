@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow-x: hidden;
+    font-family: "Sora";
+}
+@keyframes floatUp {
+    0% {
+        opacity: 0;
+        padding-top: 200px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.hero {
+    animation: floatUp 0.7s;
+    background: linear-gradient(#064654, #2f6875, #7EB2AB, white);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 100px 0 100px;
+}
+.hero-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+.rem-5 {
+    font-size: 5rem;
+}
+.yellow {
+    background: linear-gradient(45deg, yellow, orange, gold);
+    background-clip: text;
+    color: transparent;
+}
+.hero-1>span {
+    opacity: 80%;
+    font-size: 150%;
+}
+.hero-2 {
+    display: flex;
+    float: right;
+    margin-right: 200px;
+    gap: 20px;
+}
+.img {
+    height: 250px;
+    width: 200px;
+    border-radius: 15px;
+    object-fit: cover;   
+}
+.images-1, .images-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cta {
+    border: 1px solid white;
+    outline: 0;
+    background-color: transparent;
+    width: 25%;
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+.benefits {
+    padding: 200px 100px 200px 100px ;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.benefits>h1 {
+    font-size: 300%;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 50%;
+}
+.benefit-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+}
+.benefits-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.benefit-cards> span {
+    opacity: 0.6;
+}
+.icon {
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, yellow, orange, red) 1;
+}
+.jobs {
+    
+}
+@media only screen and (max-width: 900px) {
+    .hero {
+        display: block;
+        padding: 10% 5% 0% 5%;
+        height: 200vh;
+    }
+    .hero-1 {
+        width: 100%;
+    }
+    .cta {
+        width: 50%;
+    }
+    .hero-2 {
+        margin-right: auto;
+        align-items: center;
+        width: 100%;
+    }
+    .benefits {
+        padding: 50px 25px 50px 25px;
+    }
+    .jobs {
+        padding: 50px 25px 50px 25px;
+    }
+    .benefits> h1 {
+        width: 100%;
+    }
+    .benefits-container {
+        flex-direction: column;
+    }
+    .benefit-cards {
+        width: 80%;
+    }
+}
