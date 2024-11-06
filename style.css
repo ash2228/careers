@@ -143,11 +143,25 @@ html, body {
     }
     .benefits> h1 {
         width: 100%;
+        font-size: 2.5rem;
+        width: 120%;
     }
     .benefits-container {
         flex-direction: column;
     }
     .benefit-cards {
         width: 80%;
+    }
+    .rem-5 {
+        font-size: 3rem;
+        width: 80%;
+    }
+    .hero-1>span {
+        width: 90%;
+        font-size: medium;
+    }
+    .cta {
+        font-size: small;
+        width: 35%;
     }
 }
