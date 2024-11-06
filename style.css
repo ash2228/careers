@@ -68,7 +68,7 @@ html, body {
     border: 1px solid white;
     outline: 0;
     background-color: transparent;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     width: 25%;
     padding: 10px;
     color: white;
