@@ -106,7 +106,7 @@ html, body {
     flex-wrap: wrap;
     gap: 100px;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
 }
 .benefit-cards> span {
     opacity: 0.6;

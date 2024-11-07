@@ -30,7 +30,7 @@ gsap.from(".benefit-cards", {
     stagger: 0.1,
     scrollTrigger : {
         trigger: ".benefit-cards",
-        start: "top 120%",
+        start: "top 110%",
     }
 })
 gsap.from(".benefits>h1", {
@@ -67,9 +67,10 @@ gsap.from(".contact", {
     opacity: 0,
     scrollTrigger: {
         trigger: ".contact",
-        start: "top 120%",
+        start: "top 110%",
     }
 })
+//other logic
 const jobs = document.getElementsByClassName("jobs")[0];
 const ctaClick = () =>{
     const jobsPosition = jobs.getBoundingClientRect().top + window.pageYOffset;
