@@ -311,8 +311,7 @@ html, body {
     .contact> h1 {
         width: 100%;
     }
-}
-/* From Uiverse.io by ammarsaa */ 
+} 
 .form {
     display: flex;
     flex-direction: column;
