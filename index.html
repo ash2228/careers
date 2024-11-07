@@ -94,12 +94,7 @@
         <div class="job-card">
           <h1>Job Post 1</h1>
           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos sint beatae vel sequi impedit cupiditate ipsum nostrum inventore saepe, laborum quos, est, porro tempora similique quidem ratione aliquid fuga! Magnam, corrupti.</span>
-          <span>Detail</span>
-        </div>
-        <div class="job-card">
-          <h1>Job Post 2</h1>
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos sint beatae vel sequi impedit cupiditate ipsum nostrum inventore saepe, laborum quos, est, porro tempora similique quidem ratione aliquid fuga! Magnam, corrupti.</span>
-          <span>Detail</span>
+          <span onclick="togglePopUp(true)">Detail</span>
         </div>
       </div>
       <div class="contact">
@@ -109,6 +104,41 @@
           <button>Contact</button>
         </div>
       </div>
+    </div>
+    <!-- popup-window -->
+    <div id="pop-up">
+      <div id="overlay"></div>
+      <form class="form">
+        <p class="title">Register </p>
+        <p class="message">Signup now and get full access to our app. </p>
+            <div class="flex" style="gap: 20px;">
+            <label>
+                <input class="input ignore" type="text" placeholder="" required="">
+                <span>Firstname</span>
+            </label>
+    
+            <label>
+                <input class="input ignore" type="text" placeholder="" required="">
+                <span>Lastname</span>
+            </label>
+        </div>  
+                
+        <label>
+            <input class="input" type="email" placeholder="" required="">
+            <span>Email</span>
+        </label> 
+            
+        <label>
+            <input class="input" type="password" placeholder="" required="">
+            <span>field 1</span>
+        </label>
+        <label>
+            <input class="input" type="password" placeholder="" required="">
+            <span>field 2</span>
+        </label>
+        <button class="submit">Submit</button>
+        <p class="signin">Having troubles submiting the form ? <a href="#">Troubleshoot</a> </p>
+    </form>
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>

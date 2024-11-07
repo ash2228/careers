@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap');
 * {
     margin: 0;
@@ -210,7 +211,38 @@ html, body {
     background: linear-gradient(45deg, rgb(202, 202, 0), rgb(211, 137, 0), rgb(186, 158, 0));
     -webkit-background-clip: text;
 }
+
+#pop-up {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#overlay {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.5;
+    position: fixed;
+    z-index: -200;
+}
+
 @media only screen and (max-width: 900px) {
+    .input {
+        width: 50%;
+    }
+    .ignore {
+        width: 90%;
+    }
     .hero {
         display: block;
         padding: 10% 5% 0% 5%;
@@ -280,3 +312,142 @@ html, body {
         width: 100%;
     }
 }
+/* From Uiverse.io by ammarsaa */ 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* max-width: 350px; */
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: rgb(204, 133, 0);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: rgb(204, 133, 0);
+  }
+  
+  .message, 
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline orange;
+  }
+  
+  .signin a {
+    color: rgb(204, 133, 0);
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  :not(.ignore).input{
+    width: 96%;
+  }
+  .form label .input {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: rgb(204, 133, 0);
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: medium;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: rgb(204, 133, 0);
+  }
+  
+  .submit:hover {
+    background-color: rgb(204, 133, 0);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
